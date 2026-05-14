@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - Techno Gear Help</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="container nav-container">
+
+<div class="logo">
+
+<a href="https://technogearhelp.github.io">
+
+<div class="logo-box">TG</div>
+
+<div class="logo-name">
+Techno Gear Help
+</div>
+
+</a>
+
+</div>
+
+<div class="header-right">
+
+<div class="tollfree">
+📞 Toll Free: +1 (877) 280-3690
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li class="dropdown">
+
+<a href="#">Services ▾</a>
+
+<ul class="dropdown-menu">
+
+<li><a href="web-projects.html">Web Projects</a></li>
+
+<li><a href="seo-marketing.html">SEO & Marketing</a></li>
+
+<li><a href="media-management.html">Media Management</a></li>
+
+<li><a href="professional-web-site-design.html">Professional Web Design</a></li>
+
+<li><a href="e-commerce.html">E-Commerce</a></li>
+
+<li><a href="app-development.html">App Development</a></li>
+
+</ul>
+
+</li>
+
+<li><a href="contact-us.html">Contact</a></li>
+
+<li><a href="refund-policy.html">Refund Policy</a></li>
+
+</ul>
+
+</nav>
+
+</div>
+
+</div>
+
+</header>
+
+<section class="contact-hero">
+
+<div class="container">
+
+<div class="contact-banner">
+
+<img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1400&auto=format&fit=crop" alt="Business Support">
+
+<div class="enquiry-form-box">
+
+<h2>
+Send Your Enquiry
+</h2>
+
+<p>
+Connect with our experts for website development, SEO marketing, and app development services.
+</p>
+
+<form class="enquiry-form" id="enquiryForm">
+
+<input type="text" placeholder="Enter Your Name" required>
+
+<input type="email" placeholder="Enter Your Email" required>
+
+<input type="tel" placeholder="Enter Phone Number" required>
+
+<textarea placeholder="Enter Your Requirements" required></textarea>
+
+<button type="submit" id="submitBtn">
+Submit
+</button>
+
+<p id="successMessage"></p>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="contact-info-section">
+
+<div class="container">
+
+<div class="heading">
+
+<h2>
+Get In Touch
+</h2>
+
+<p>
+Professional digital marketing and development solutions for businesses worldwide.
+</p>
+
+</div>
+
+<div class="contact-info-grid">
+
+<div class="info-card">
+
+<div class="info-icon">
+📞
+</div>
+
+<h3>
+Phone Support
+</h3>
+
+<p>
++1 (877) 280-3690
+</p>
+
+</div>
+
+<div class="info-card">
+
+<div class="info-icon">
+✉️
+</div>
+
+<h3>
+Email Address
+</h3>
+
+<p>
+support@technogearhelp.com
+</p>
+
+</div>
+
+<div class="info-card">
+
+<div class="info-icon">
+🌐
+</div>
+
+<h3>
+Business Services
+</h3>
+
+<p>
+Professional website design, SEO optimization, app development, and branding solutions.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="container footer-grid">
+
+<div>
+
+<h3>
+Techno Gear Help
+</h3>
+
+<p>
+Professional digital marketing and development company helping businesses grow online.
+</p>
+
+</div>
+
+<div>
+
+<h4>
+Quick Links
+</h4>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="web-projects.html">Web Projects</a></li>
+
+<li><a href="seo-marketing.html">SEO Marketing</a></li>
+
+<li><a href="contact-us.html">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h4>
+Contact
+</h4>
+
+<p>
+📞 +1 (877) 280-3690
+</p>
+
+<p>
+✉️ support@technogearhelp.com
+</p>
+
+</div>
+
+</div>
+
+<div class="copyright">
+© 2026 Techno Gear Help
+</div>
+
+</footer>
+
+<script>
+
+const form = document.getElementById("enquiryForm");
+const successMessage = document.getElementById("successMessage");
+const submitBtn = document.getElementById("submitBtn");
+
+form.addEventListener("submit", function(e){
+
+e.preventDefault();
+
+submitBtn.innerHTML = "Submitting...";
+submitBtn.disabled = true;
+
+setTimeout(function(){
+
+successMessage.innerHTML = "Your enquiry has been submitted successfully!";
+successMessage.style.display = "block";
+
+submitBtn.innerHTML = "Submit";
+submitBtn.disabled = false;
+
+form.reset();
+
+},3000);
+
+});
+
+</script>
+
+</body>
+
+</html>
